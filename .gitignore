@@ -1,0 +1,10 @@
+/logs/
+/result/
+/.vscode/
+/.venv/
+
+log.html
+output.xml
+report.html
+
+*.log
