@@ -1,7 +1,12 @@
 # Testcase by business key
 
-In this scenario we have a simple test pipeline.
+In this scenario we have a simple test pipeline:
 
+![Process Model](doc/img/camundaTestOrchestrator.png)
+
+The idea is that every process instance represents a testrun with certain testdata. Each testcase fetches test data from Camunda.
+
+Technically this is achieved by:
 1. Start process, using name of testcase as *business key* for each process instance
 1. Each testcase fetches on the same topic, but filters process instances on `business key`
 
